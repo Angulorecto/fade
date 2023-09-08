@@ -1,6 +1,28 @@
 <html>
   <head>
     <title>Transition</title>
-    <iframe style="width:100%; height:100%; top:0%; left:0%;" class="iframe" src="https://github.com"></iframe>
+    <script>
+          const iframe = document.createElement("iframe")
+          const style = iframe.style
+          const link = document.createElement("link")
+
+          const name = "Transition";
+          const icon = "https://angulorecto.github.io/iwillchange/pictures/favicon.ico";
+        
+          document.title = name;
+          link.rel = "icon";
+          link.href = icon;
+        
+          iframe.src = "https://github.com";
+          style.position = "fixed";
+          style.top = style.bottom = style.left = style.right = 0;
+          style.border = style.outline = "none";
+          style.width = style.height = "100%";
+
+          doc.head.appendChild(link);
+          doc.body.appendChild(iframe);
+          location.replace("https://clever.com/");
+    }
+    </script>
   </head>
 </html>
